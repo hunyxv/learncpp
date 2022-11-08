@@ -36,4 +36,5 @@ main
 .AppleDouble
 .LSOverride
 
-*/.vscode
+testjson/temp
+testpkg/.vscode

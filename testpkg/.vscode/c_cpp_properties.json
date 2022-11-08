@@ -4,7 +4,7 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/Users/hongyu/Projects/cpp/**"
+                "/Users/hongyu/Projects/cpp/learncpp/testpkg/**"
             ],
             "defines": [],
             "macFrameworkPath": [

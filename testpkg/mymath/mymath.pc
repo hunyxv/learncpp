@@ -1,0 +1,7 @@
+librootdir=/Users/xxx/Projects/cpp/mymath
+
+Name: mymath
+Description: a simple add function
+Version: 1.0
+Cflags: -I${librootdir}/include
+Libs: -L${librootdir}/lib -lmymath
