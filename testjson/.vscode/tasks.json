@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build c++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-std=c++17",
+                "-o",
+                "${workspaceFolder}/temp/${fileBasenameNoExtension}.out",
+                "-g",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
+                "-ljsoncpp"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent",
+                "echo": true,
+                "focus": false,
+                "showReuseMessage": true,
+                "clear": false
+            }
+        }
+    ]
+}
