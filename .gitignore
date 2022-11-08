@@ -32,4 +32,8 @@
 *.app
 main
 
-.vscode/*
+.DS_Store
+.AppleDouble
+.LSOverride
+
+*/.vscode
