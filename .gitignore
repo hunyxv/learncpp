@@ -38,3 +38,4 @@
 
 testjson/temp/
 **/.vscode/
+**/build
