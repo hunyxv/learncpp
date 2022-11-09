@@ -21,7 +21,7 @@ Name: mysql-connector
 Description: MySQL Connector/C++
 Version: 8.0.31
 Cflags: -I${includedir}
-Libs: -L${libdir} -llibmysqlcppconn8-static
+Libs: -L${libdir} -lmysqlcppconn8-static
 ```
 
 ## 依赖
