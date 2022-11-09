@@ -24,6 +24,24 @@ int main() {
     }
     cout << endl;
 
+    session.sql("use library;").execute();
+
+    mysqlx::SqlResult ret = session.sql(R"(
+        insert into books(title,author,price,quantity)
+        values("C++ 并发编程实战","Anthony Williams",89,1);
+    )").execute();
+    session.commit();
+
+    cout << "insert return data? " << boolalpha << ret.hasData() << endl;
+
+    mysqlx::SqlResult result = session.sql("select * from books;").execute();
+    for (auto item : result) {
+        cout << "id: " << item[0] << " title: " << item[1]
+             << " author: " << item[2] << " price: " << item[3]
+             << " quantity: " << item[4] << endl;
+    }
+
+    session.sql(R"(delete from books where title = "C++ 并发编程实战";)").execute();
     session.close();
     return 0;
 }
