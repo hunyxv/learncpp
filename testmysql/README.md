@@ -6,6 +6,8 @@
 
 mac 安装在了 /usr/local/mysql-connector-c++-x.xx 目录下
 
+mysqlx 使用文档：<https://dev.mysql.com/doc/x-devapi-userguide/en/preface.html>
+
 ## 编写 pkg-config
 
 在 `/usr/local/lib/pkgconfig` 下添加 mysql-connector.pc。
