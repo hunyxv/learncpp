@@ -1,0 +1,7 @@
+#ifndef __PATH_H__
+#define __PATH_H__
+
+// 将 CMakeList中的 CMAKE_SOURCE_DIR 变量赋值给 常量 ver
+const char* path = "@CMAKE_SOURCE_DIR@";
+
+#endif

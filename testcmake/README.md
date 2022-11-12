@@ -66,11 +66,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # configure_file的作用将一份文件拷贝到另一个位置并修改它的内容，使得在代码中使用CMake中定义的变量 
 # configure_file官方文档：https://cmake.org/cmake/help/latest/command/configure_file.html 
 configure_file (
-  "${PROJECT_SOURCE_DIR}/calculatesqrt.h.in"
-  "${PROJECT_BINARY_DIR}/calculatesqrt.h"
+  "${PROJECT_SOURCE_DIR}/CalculateSqrtConfig.h.in"
+  "${PROJECT_BINARY_DIR}/CalculateSqrtConfig.h"
 )
  
-# 添加TutorialConfig.h的路径到头文件的搜索路径
+# 添加 CalculateSqrtConfig.h 的路径到头文件的搜索路径
 include_directories("${PROJECT_BINARY_DIR}")
  
 # 添加目标可执行文件
